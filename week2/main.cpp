@@ -107,6 +107,17 @@ public:
 		delete tail;
 		tail = temp;
 	}
+	void pop_front() {
+		if (head == nullptr && tail == nullptr) return;
+		Node* temp = head->next;
+		delete head;
+		head = temp;
+		if (size == 1) {
+			tail = temp;
+		}
+		size--;
+
+	}
 };
 
 class Stack
