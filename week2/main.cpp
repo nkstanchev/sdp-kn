@@ -39,11 +39,14 @@ class LinkedList
 
 	void erase() {
 		Node* temp = head;
+		Node* temp2 = nullptr;
 		while (temp != nullptr) {
+			temp2 = temp->next;
 			delete temp;
-			temp = temp->next;
+			temp = temp2;
 		}
 		head = tail = nullptr;
+		size = 0;
 	}
 
 
