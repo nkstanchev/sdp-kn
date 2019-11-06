@@ -112,11 +112,10 @@ public:
 		Node* temp = head->next;
 		delete head;
 		head = temp;
+		size--;
 		if (size == 1) {
 			tail = temp;
 		}
-		size--;
-
 	}
 };
 
