@@ -2,7 +2,7 @@
 
 ## Задача 1
 
-Delete linked list nodes which have a Lesser Value on Left Side:
+Изтрийте node-овете на свързан списък, които имат по-малка стойност от лявата страна:
 
 **Input: 12->15->10->11->5->6->2->3**
 
